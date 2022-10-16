@@ -56,7 +56,6 @@
 <script>
 
     function control(kutu){
-
         for(var i = 0; i<3; i++){
             var temp = 0;
                 if(!kutu[i][temp].innerHTML == "" && kutu[i][temp].innerHTML == kutu[i][temp+1].innerHTML && kutu[i][temp].innerHTML== kutu[i][temp+2].innerHTML){
@@ -88,7 +87,6 @@
             return true;
         }
 
-
         for(var i = 0; i<3; i++){
 
             for(var j = 0; j<3; j++){
@@ -102,11 +100,9 @@
                 }
             }
         }
-        
         return false;
     }
-
-
+    
     function take_point(){
 
         this.innerHTML = "X";
@@ -125,8 +121,7 @@
         kutular2[k].push(kutular[i]); /*push diziye
         ekleme yaparken kullanılıyordu unutmuşuz.*/
         }
-
-
+        
         if(control(kutular2)){
 
             alert("Oyunu Kazandınız.Tebrikler !!!");
@@ -153,18 +148,14 @@
         alert("Oyunu kaybettiniz !!!");
         return;
     }
-
     }
-
-    var finish = false;
+    
     var kutular = document.querySelectorAll('.box'); 
-
-
+    
     for(var i = 0; i<10; i++){
         kutular[i].addEventListener('click',take_point);
     }
-
+    
     </script>
-
 </body>
 </html>
