@@ -39,6 +39,7 @@ function gameOver(){
         velo_x = 0;
         velo_y = 0;
         score = 0;
+        direction = "blank";
     }
 
     else{
@@ -56,6 +57,7 @@ function gameOver(){
                 velo_x = 0;
                 velo_y = 0;
                 score = 0;
+                direction = "blank";
             }
         }
     }
