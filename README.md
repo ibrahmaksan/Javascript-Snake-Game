@@ -1,4 +1,4 @@
-# Javascript
+# Javascript Games
 
 <u>I will share my javascript projects.</u>
 <ul>
